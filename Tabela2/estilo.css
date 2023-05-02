@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-width: 3px;
+    border-color: dimgray;
+}
+
+thead{
+    background-color: dimgrey;
+    color: white;
+
+}
+
+th {
+    background-color:dimgray;
+    color: white;
+    width: 30px;
+}
+
+td{
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+    border-color: lightgray;
+    border-width: 3px;
+
+}
+
+.time{
+    width: 450px;
+}
+
+.numero{
+    background-color:lightgrey;
+    width: 120px;
+    height: 50px;
+
+}
