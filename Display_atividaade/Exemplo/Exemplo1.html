@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display</title>
+
+    <style>
+       
+       div.base{
+            border: 1px solid blue;
+            width: 200px;
+            height: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        div.display1 {
+            display: block;
+        }
+        div.display2 {
+            display: inline;
+        }
+        div.display3 {
+            display: inline-block;
+        }
+
+
+        #popup {
+            /* display: none;             */
+
+            background-color: #fffdb9;
+            padding: 20px;
+            border: 1px solid #000000
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Display block</h1>
+    <div class="base display1">Div</div>
+    <div class="base display1">Div</div>
+    <div class="base display1">Div</div>
+    
+    <h1>Display inline</h1>
+    <div class="base display2">Div</div>
+    <div class="base display2">Div</div>
+    <div class="base display2">Div</div>
+    
+    <h1>Display inline-block</h1>
+    <div class="base display3">Div</div>
+    <div class="base display3">Div</div>
+    <div class="base display3">Div</div>
+
+    <div id="popup">Este é um popup.</div>
+
+    <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dicta, est exercitationem eaque dolorum dolorem similique quam incidunt amet accusantium vel quaerat illo aliquam, at deserunt delectus nostrum explicabo quia!</p></div>
+    
+</body>
+</html>
