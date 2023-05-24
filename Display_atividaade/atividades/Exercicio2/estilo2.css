@@ -1,0 +1,22 @@
+
+div{
+    display: block;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    padding-bottom: auto;
+    background-color:lightgray;
+    text-align: left;
+}
+
+.por:hover{
+    color: white;
+    background-color:seagreen;
+    transition: 0.5s;
+    opacity: 1.0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: Poppins, Arial, sans-serif;
+}
