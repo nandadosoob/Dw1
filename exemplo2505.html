@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 
+
+        px tamanho absoluto
+        % é em relação a mae
+        vw tamanho relativo a largura da tela
+        vh tamanho relativo a altura da tela
+
+        max-width determina o tamanho maximo da largura
+        min-width determina o tamanho minimo da largura
+        
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .mae{
+            background-color: lightgray;
+            width: 100vw;
+            height: 100vh;
+           
+        } 
+
+        .box1{
+            background-color:red;
+            width: 80%;
+            height: 25%;
+            max-width: 50vw;
+        }
+
+        .box2{
+            background-color:green;
+            width: 85vw;
+            height: 50px;
+            min-width: 100px;
+        }
+
+        .box3{
+            background-color:blue;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .box4{
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .box4-mae{
+            font-size: 18px;
+        }
+
+        .box4-filho{
+            font-size: 1.2em;
+        }
+
+        .box4-neto{
+            font-size: 1.2em;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="mae">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3">miau</div>
+
+        <div class="box4 box4-mae">
+            Box mae
+            <div class="box4 box4-filho">
+                Box filho
+                <div class="box4 box4-neto">
+                    Box neto
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
