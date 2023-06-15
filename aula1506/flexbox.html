@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            background-color: lightgray;
+            border: 1px solid black;
+            max-width: 500px;
+            height: 450px;
+            display: flex;
+            /* define a direção do eixo principal*/
+            /* flex-direction: row-reverse */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            flex-direction: row;
+             /* flex-wrap: wrap; */
+            /* define se havera quebra de linha qnd os elementos nao couberem no container */
+            /* flex-wrap: wrap : no wrap */
+
+            /* flex-flow define a direção e o wrap */
+           flex-flow: row wrap;
+           /* flex-flow: column wrap; */
+
+            /* alinhamento dos elementos no eixo principal */
+            justify-content: center;
+
+            /* alinhamento dos elementos no eixo transversal */
+            align-items: flex-end;
+
+        }
+
+        .box{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(135, 166, 233);
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div> 
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+    </div>
+
+</body>
+</html>
