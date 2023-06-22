@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            background-color: rgb(199, 187, 253);
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /*flex-wrap: wrap;
+
+            align-content: space-btween;*/
+            column-gap: 10px;
+
+        }
+
+        .box{
+            
+            background-color: rgb(135, 166, 233);
+            border: 1px solid black;
+            flex-grow: 1;
+        }
+
+        .altura50{
+            height: 50px;
+        }
+
+        .order{
+            order: 6;
+        }
+
+        .end{
+            align-self: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box end">2</div>
+        <div class="box">3</div>
+        
+    </div>
+
+</body>
+</html>
