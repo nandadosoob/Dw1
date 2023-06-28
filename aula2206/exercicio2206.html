@@ -8,53 +8,46 @@
 
     <style>
 
-        .container{
-            background-color: rgb(216, 216, 243);
-            width: 1420px;
-            height: 730px;
-            display: flex;
-        }
-
-        .box{
+        body{
+            background-color: rgb(206, 206, 206);
             border: 1px solid black;
-
-        }
-
-        .topo{
-            flex-direction: row;
-            align-content: flex-start;
-
-        }
-
-        .rodape{
-            flex-direction: row;
-            align-content: flex-end;
-        }
-
-        .sidebar{
+            height: 700px;
+            width: 1000px;
+            display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+
+        }
+
+        header{
+            background-color: lightyellow;
+            border: 3px solid black;
+        }
+
+        main{
+            background-color: lightgreen;
+            border: 3px solid black;
+        }
+
+        aside{
+            background-color: lightskyblue;
+            border: 3px solid black;
             
         }
 
-        .conteudo{
-            flex-direction: column;
-            justify-content: flex-end;
-            
+        footer{
+            background-color: lightpink;
+            border: 3px solid black;
         }
 
     </style>
 
 </head>
 <body>
-    
-    <div class="container">
-        <thead><div class="box topo">topo</div></thead>
-        <tfoot><div class="box rodape">rodape</div></tfoot>
-        <div class="box sidebar">sidebar</div>
-        <div class="box conteudo">conteudo</div>
+    <div>
+        <header>topo</header>
+        <main>conteúdo</main>
+        <aside>sidebar</aside>
+        <footer>rodapé</footer>
     </div>
-
-
 </body>
 </html>
