@@ -8,6 +8,11 @@
 
     <style>
 
+        :root{
+            --largura-aside: 300px
+            --altura-barra: 150px
+        }
+
         body{
             border: 1px solid black;
             height: 700px;
@@ -15,49 +20,37 @@
         }
 
         .container{
-            border: 1px solid black;
-            height: 700px;
-            width: 900px;
-        }
-
-        .topo{
+            width: 100vw;
+            height: 100vh;
             display: flex;
-            width: 80%;
-            height: 10%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 1px solid black;
         }
 
-        .topo header{
+        header{
             border: 1px solid black;
             background-color: lightyellow;
             height: 100%;
             width: 100%;
         }
 
-        .meio{
-            display: flex;
-            height: 80%;
-            width: 80%;
-        }
-
-        .meio main{
+        
+        main{
             border: 1px solid black;
             background-color: lightgreen;
             width: 100%;
             height: 100%;
         }
 
-        .side{
-            display: flex;
-            width: 20%;
-            height: 100%;
+        
 
-        }
-
-        .side aside{
+        aside{
             border: 1px solid black;
             background-color: lightskyblue;
-            width: 100%;
+        
             height: 100%;
+            
         }
 
         footer{
@@ -73,15 +66,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="topo">
-            <header>topo</header>
-        </div>
-        <div class="meio">
-            <main>conteúdo</main>
-        </div>
-        <div class="side">
-            <aside>sidebar</aside>
-        </div>
+        <header>topo</header>
+        <main>conteúdo</main>
+        <aside>sidebar</aside>
         <footer>rodapé</footer>
     </div>
         
