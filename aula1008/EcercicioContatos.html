@@ -4,27 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(82, 82, 237);
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            
+        }
+
+        .lista{
+            background-color: white;
+            width: 30vw;
+            height: 75vh;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        .item-lista{
+            list-style: none;
+            display: flex;
+
+        }
+
+        .foto{
+            display: flex;
+            flex-shrink: 0;
+            
+        }
+
+        .nome{
+            display: flex;
+            flex-grow: 1;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .end{
+            display: flex;
+            color: lightgray;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            flex-grow: 1;
+        }
+
+    </style>
+
 </head>
 <body>
     <div class="container">
         <ul class="lista">
             <li class="item-lista">
-                <aside class="foto"></aside>
-                <main class="dados">
-                    <ul>
-                        <li>Heidi Diaz</li>
-                        <li>2120 Homestead Rd</li>
-                    </ul>
-                </main>
+                <p class="foto"><img src="fotosContatos/pessoa1red.png"></p>
+                <p class="nome">Eduardo Rose</p>
+                <p class="end">5303 Fincher Rd</p>
             </li>
             <li class="item-lista">
-
+                <p class="foto"><img src="fotosContatos/pessoa2red.jpg"></p>
+                <p class="nome">Theodore Owens</p>
+                <p class="end">1915 Taylor St</p>
             </li>
             <li class="item-lista">
-
+                <p class="foto"><img src="fotosContatos/pessoa3red.jpg"></p>
+                <p class="nome">Letitia Soto</p>
+                <p class="end">475 Hunters Creek Dr</p>
             </li>
             <li class="item-lista">
-
+                <p class="foto"><img src="fotosContatos/pessoa4red.jpg"></p>
+                <p class="nome">Louise Day</p>
+                <p class="end">9631 Marsh Ln</p>
             </li>
         </ul>
 
