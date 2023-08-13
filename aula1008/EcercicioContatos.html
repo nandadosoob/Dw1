@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>contatos</title>
 
     <style>
         * {
@@ -18,22 +18,18 @@
 
         .container{
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-            
-            
+            flex-direction: row;
         }
 
         .lista{
             background-color: white;
-            width: 30vw;
-            height: 75vh;
+            width: 35vw;
+            height: 80vh;
+            padding: 1%;
             border-radius: 5px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            
+            justify-content:space-evenly;
         }
 
         .item-lista{
@@ -41,7 +37,6 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            
         }
 
         .foto{
@@ -55,7 +50,6 @@
             font-size: large;
             flex-grow: 1;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
         }
 
         .end{
@@ -68,6 +62,10 @@
             flex-grow: 1;
         }
 
+        .dados{
+            padding: 5%;
+        }
+
     </style>
 
 </head>
@@ -76,28 +74,31 @@
         <ul class="lista">
             <li class="item-lista">
                 <p class="foto"><img src="fotosContatos/pessoa1red.png"></p>
-                <div>
+                <div class="dados">
                 <p class="nome">Eduardo Rose</p>
                 <p class="end">5303 Fincher Rd</p>
                 </div>
             </li>
+            <hr>
             <li class="item-lista">
-                <p class="foto"><img src="fotosContatos/pessoa2red.jpg"></p>
-                <div>
+                <p class="foto"><img src="fotosContatos/pessoa2red.png"></p>
+                <div class="dados">
                 <p class="nome">Theodore Owens</p>
                 <p class="end">1915 Taylor St</p>
                 </div>
             </li>
+            <hr>
             <li class="item-lista">
-                <p class="foto"><img src="fotosContatos/pessoa3red.jpg"></p>
-                <div>
+                <p class="foto"><img src="fotosContatos/pessoa3red.png"></p>
+                <div class="dados">
                 <p class="nome">Letitia Soto</p>
                 <p class="end">475 Hunters Creek Dr</p>
                 </div>
             </li>
+            <hr>
             <li class="item-lista">
-                <p class="foto"><img src="fotosContatos/pessoa4red.jpg"></p>
-                <div>
+                <p class="foto"><img src="fotosContatos/pessoa4red.png"></p>
+                <div class="dados">
                 <p class="nome">Louise Day</p>
                 <p class="end">9631 Marsh Ln</p>
                 </div>
