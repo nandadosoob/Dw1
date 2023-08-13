@@ -21,7 +21,7 @@
             flex-direction: column;
             flex-wrap: wrap;
             align-content: center;
-            align-items: center;
+            
             
         }
 
@@ -39,24 +39,31 @@
         .item-lista{
             list-style: none;
             display: flex;
-
+            flex-direction: row;
+            align-items: center;
+            
         }
 
         .foto{
             display: flex;
             flex-shrink: 0;
-            
         }
 
         .nome{
             display: flex;
+            flex-direction: row;
+            font-size: large;
             flex-grow: 1;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
         }
 
         .end{
             display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
             color: lightgray;
+            font-size: large;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             flex-grow: 1;
         }
@@ -69,23 +76,31 @@
         <ul class="lista">
             <li class="item-lista">
                 <p class="foto"><img src="fotosContatos/pessoa1red.png"></p>
+                <div>
                 <p class="nome">Eduardo Rose</p>
                 <p class="end">5303 Fincher Rd</p>
+                </div>
             </li>
             <li class="item-lista">
                 <p class="foto"><img src="fotosContatos/pessoa2red.jpg"></p>
+                <div>
                 <p class="nome">Theodore Owens</p>
                 <p class="end">1915 Taylor St</p>
+                </div>
             </li>
             <li class="item-lista">
                 <p class="foto"><img src="fotosContatos/pessoa3red.jpg"></p>
+                <div>
                 <p class="nome">Letitia Soto</p>
                 <p class="end">475 Hunters Creek Dr</p>
+                </div>
             </li>
             <li class="item-lista">
                 <p class="foto"><img src="fotosContatos/pessoa4red.jpg"></p>
+                <div>
                 <p class="nome">Louise Day</p>
                 <p class="end">9631 Marsh Ln</p>
+                </div>
             </li>
         </ul>
 
