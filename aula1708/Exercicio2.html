@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2 caixas</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: aliceblue;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 15% auto 15%;
+            grid-template-columns: 20% auto;
+            grid-template-areas: 
+                "s1 t1"
+                "s1 m1"
+                "s1 r1";
+        }
+
+        .topo{
+            background-color: lightyellow;
+            grid-area: t1;
+        }
+
+        .sidebar{
+            background-color: lightblue;
+            grid-area: s1;
+        }
+
+        .main{
+            background-color: lightgreen;
+            grid-area: m1;
+        }
+
+        .rodape{
+            background-color: lightpink;
+            grid-area: r1;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="topo"></div>
+        <div class="sidebar"></div>
+        <div class="main"></div>
+        <div class="rodape"></div>
+    </div>
+    
+</body>
+</html>
