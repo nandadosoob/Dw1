@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A13 Exercicio 1</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 150px 150px 150px;
+            grid-template-areas: 
+                "c1 c2 c3"
+                "c4 c5 c6";
+            grid-gap: 35px 20px;
+        
+            justify-content: center;
+            align-content: center;
+            
+        }
+
+        header{
+            background-color: black;
+            height: 70px;
+            color: white;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+        .logo{
+            flex-grow: 1;
+        }
+        
+        
+        .bicicletas{
+            background-color: lightgray;
+            grid-area:c1;
+            display: grid;
+            align-content: end;
+        }
+
+        .carros{
+            grid-area: c2;
+            background-color: lightgray;
+            display: grid;
+            align-content: end;
+        }
+
+        .barcos{
+            grid-area: c3;
+            background-color: lightgray;
+            display: grid;
+            align-content: end;
+        }
+
+        .calcas{
+            grid-area: c4;
+            background-color: lightgray;
+            display: grid;
+            align-content: end;
+        }
+
+        .bermudas{
+            grid-area: c5;
+            background-color: lightgray;
+            display: grid;
+            align-content: end;
+        }
+
+        .camisas{
+            grid-area: c6;
+            background-color: lightgray;
+            display: grid;
+            align-content: end;
+        }
+
+        footer{
+            background-color: white;
+            color: black;
+            display: grid;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">Logo </div>
+        <div>Sobre</div>
+        <div>Produtos</div>
+        <div>Contato</div>
+    </header>
+    <div class="container">
+        <div class="bicicletas">
+            <footer>Bicicletas</footer>
+        </div>
+        
+        <div class="carros">
+            <footer>Carros</footer>
+        </div>
+
+        <div class="barcos">
+            <footer>Barcos</footer>
+        </div>
+
+        <div class="calcas">
+            <footer>Calcas</footer>
+        </div>
+
+        <div class="bermudas">
+            <footer>Bermudas</footer>
+        </div>
+
+        <div class="camisas">
+            <footer>Camisas</footer>
+        </div>
+
+    </div>
+</body>
+</html>

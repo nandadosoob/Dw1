@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A13Exercicio2</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 200px 200px;
+            grid-template-areas: 
+                "b1 b2"
+                "b1 b3";
+            grid-gap: 20px;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        header{
+            background-color: black;
+            height: 70px;
+            color: white;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            
+            
+        }
+        
+        .logo{
+            flex-grow: 1;
+        }
+
+        
+
+        .leg1{
+            background-color: lightgray;
+            grid-area: b1;
+            display: grid;
+            align-content: end;
+        }
+
+        .leg2{
+            background-color: lightgray;
+            grid-area: b2;
+            display: grid;
+            align-content: end;
+        }
+
+        .leg3{
+            background-color: lightgray;
+            grid-area: b3;
+            display: grid;
+            align-content: end;
+        }
+
+        footer{
+            background-color: black;
+            height: 30px;
+            color: white;
+            display: grid;
+            align-content: center;
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">Logo </div>
+        <div>Sobre</div>
+        <div>Produtos</div>
+        <div>Contato</div>
+    </header>
+    <div class="container">
+        <div class="leg1">
+            <footer>Legenda imagem</footer>
+        </div>
+        <div class="leg2">
+            <footer>Legenda imagem</footer>
+        </div>
+        <div class="leg3">
+            <footer>Legenda imagem</footer>
+        </div>
+    </div>
+</body>
+</html>
