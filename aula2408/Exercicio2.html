@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(#2F0743,#41295a)
+        }
+
+        div{
+            width: 500px;
+            height: 400px;
+            border-radius: 10px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        #name{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;      
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        #em{
+            width: 49%;
+            padding: 12px 20px;
+          
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        #ass{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 5px 0;      
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+
+        textarea{
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 12px 20px;
+            margin: 12px 0 0;
+        }
+
+        input[type="submit"],
+        select{
+            width: 40%;
+            background-color: blueviolet;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 12px 15px;
+            margin: 5px 0;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        <form action="/action_page.php">
+        <p>Envie sua mensagem</p>
+        <br>
+        <hr>
+        <input 
+        type="text" 
+        id="name"
+        name="nome"
+        placeholder="Seu nome"/>
+
+        <input 
+        type="email" 
+        id="em"
+        name="email"
+        placeholder="Seu E-mail"/>
+
+        
+
+        <input 
+        type="text" 
+        id="ass"
+        name="assunto"
+        placeholder="Assunto"/>
+        <br>
+        <textarea 
+        name="mensagem" 
+        rows="9" 
+        cols="55" 
+        placeholder="Digite sua mensagem"></textarea>
+        <br>
+        <input type="submit" value="Enviar Mensagem" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+
+    <style>
+    
+        #nome{
+            padding: 0 80px;
+        }
+
+        #email{
+            padding: 0 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#" method="get">
+    <label for="neme">Nome:</label>
+    <input
+        type="text"
+        id="nome"
+        name="nme"
+    /><br>
+    <br>
+    <label for="email">Email:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+    /><br>
+    <br>
+    <label for="senha">Senha:</label>
+    <input
+        type="text"
+        id="senha"
+        name="key"
+    /><br>
+    <br>
+    <p>Tipo de cadastro:</p>
+    <label for="aluno">Aluno:</label>
+    <input 
+        type="radio" 
+        id="opaluno" 
+        name="opcao" 
+        value="opcaoA"
+        >
+
+    <label for="servidor">Servidor:</label>
+    <input 
+        type="radio" 
+        id="opservidor" 
+        name="opcao" 
+        value="opcaoB">
+
+    <label for="visitante">Visitante:</label>
+    <input 
+        type="radio" 
+        id="opvisitante" 
+        name="opcao" 
+        value="opcaoC">
+    <br>
+    <br>
+
+    <label for="campus">Campus da UTFPR:</label><br>
+    <select id="campus" name="campus">
+        <option value="CampoMourao">Campo Mourão</option>
+        <option value="apucarana">Apucarana</option>
+        <option value="cornelio">Cornélio Procópio</option>
+        <option value="curitiba">Curitiba</option>
+    </select><br>
+    <br>
+    
+    <p>Disciplinas que cursa atualmente:</p>
+    <input
+    type="checkbox"
+    id="opDW"
+    name="op"
+    name="DW">
+    <label for="DW">Desenvolvimento Web 1</label><br>
+
+    <input
+    type="checkbox"
+    id="opLP"
+    name="op"
+    name="LP">
+    <label for="LP2">Linguagens De Programação 2</label><br>
+
+    <input
+    type="checkbox"
+    id="opBD"
+    name="op"
+    name="BD">
+    <label for="DW">Banco De Dados</label><br>
+
+    <input
+    type="checkbox"
+    id="opredes"
+    name="op"
+    name="redes">
+    <label for="DW">Redes De Computadores 1</label><br>
+
+    <p>Quais são seus principais hobbies?</p>
+    <textarea 
+    name="hobbies" 
+    rows="10" 
+    cols="50" 
+    placeholder="Digite aqui..."></textarea><br>
+    <br>
+
+    <input type="submit" value="Enviar dados">
+    <input type="reset" value="Limpar dados">
+    </form>
+
+</body>
+</html>
