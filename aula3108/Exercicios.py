@@ -21,3 +21,25 @@ salarioFinal = salarioAumento - (salarioInicial * 0.08)
 print("Salario inicial: ",salarioInicial)
 print("salario com aumento: ", salarioAumento)
 print("salario final: ", salarioFinal)
+
+# Exercicio 7
+
+n = 5
+i = 1
+soma = 0
+
+while(i <= n):
+    soma = soma+i
+    contador = i + 1
+
+print(soma)
+
+#Exercicio 8
+n = 5
+x = 1
+
+while (n > 0){
+    x = x * n
+    n = n - 1
+}
+print(x)
