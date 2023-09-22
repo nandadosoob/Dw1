@@ -17,6 +17,7 @@
 // salario = salario* 1.15
 // console.log("salario com aumento: " + salario)
 
+<<<<<<< Updated upstream
 // salario = salario - (salario * 0.08)
 // console.log("salario final: " + salario)
 
@@ -40,3 +41,28 @@ while (n > 0){
     n = n - 1
 }
 console.log(x)
+=======
+//Exercicio 4
+let qtde_dia = 517
+let qtde_anos = qtde_dias / 365
+let qtde_dias = qtde_dia % 365
+let qtde_meses = qtde_dias / 30
+let qtde_diass = qtde_dias % 30
+
+console.log("Anos:  ", qtde_anos)
+console.log("Meses: ", qtde_meses)
+console.log("Dias:  ", qtde_dias)
+
+//Exercicio 7
+let n = 5
+
+let contador = 1
+let soma = 0
+
+while (contador <= n){
+	let soma = soma + contador
+	let contador = contador + 1
+}
+
+console.log (soma)
+>>>>>>> Stashed changes
