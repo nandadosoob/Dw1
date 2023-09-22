@@ -4,25 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terreno</title>
-    <link rel="styleheet" href="estilo.css">
-</head>
-<body>
-    <label for="largura">Largura: </label>
-    <input id="input_largura" type="number">
-
-    <br>
-
-    <label for="profundidade">Profundiade: </label>
-    <input id="input_profundidade" type="number">
-
-    <br>
-
-    <label for="valorMetro">Valor do metro quadrado: </label>
-    <input id="input_metro" type="number">
     
-    <br>
+</head>
 
-    <button onclick = "calculaArea()">Calcular</button>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            width: 350px;
+            height: 400px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+
+        #input_largura{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        #input_profundidade{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        #input_metro{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        #calcula{
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+
+    </style>
+
+<body>
+    <div>
+        <h1>Imobiliaria</h1>
+        <label for="largura">Largura: </label>
+        <input id="input_largura" type="number">
+    
+        <br>
+    
+        <label for="profundidade">Profundidade: </label>
+        <input id="input_profundidade" type="number">
+
+        <br>
+
+        <label for="valorMetro">Valor do metro quadrado: </label>
+        <input id="input_metro" type="number">
+    
+        <br>
+
+        <button onclick = "calculaArea()" id="calcula">Calcular</button>
+
+    </div>
 
     <script src="./conta.js"></script>
 
