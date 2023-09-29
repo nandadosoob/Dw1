@@ -12,26 +12,45 @@
             box-sizing: border-box;
         }
 
-        .container{
+        body{
             width: 100vw;
             height: 100vh;
+        }
+
+        .container{
             background-color: white;
+            width: 65%;
+            height: 40%;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            justify-content: space-evenly;        
         }
 
 
         #calcVelocidade{
-            width: 40vw;
+            width: 30vw;
             height: 40vh;
             display: grid;
             background-color: lightgray;
-            border-radius: 10px;
+            border-radius: 5px;
             border: 1px solid black;
             padding: 30px;
 
+        }
+        
+        #inf{
+            width: 30vw;
+            height: 40vh;
+            display: grid;
+            background-color: lightgray;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 30px;
+        }
+
+        #resultado{
+            background-color: red;
+            color: black;
         }
 
         input{
@@ -46,15 +65,6 @@
         }
 
 
-        #inf{
-            width: 40vw;
-            height: 40vh;
-            display: grid;
-            background-color: lightgray;
-            border-radius: 10px;
-            border: 1px solid black;
-            padding: 30px;
-        }
 
     </style>
 
@@ -78,14 +88,17 @@
 
         </div>
 
-    <div id="inf">
-        <p>Multa por excesso de velocidade:</p>
-                
-        <p><strong>R$ 130,16</strong> - Até 20% acima do limite permitido</p>
-        <p><strong>$ 195,23</strong> - De 20% até 50% acima do limite permitido</p>
-        <p><strong>$ 880,41</strong> - Acima de 50% do limite permitido</p>
+        <div id="inf">
+            <p>Multa por excesso de velocidade:</p>
+            <p><strong>R$ 130,16</strong> - Até 20% acima do limite permitido</p>
+            <p><strong>$ 195,23</strong> - De 20% até 50% acima do limite permitido</p>
+            <p><strong>$ 880,41</strong> - Acima de 50% do limite permitido</p>
+        </div>
 
-    </div>
+        <div id="resultado">
+
+        </div>
+
     </div>
 
 
