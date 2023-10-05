@@ -2,7 +2,7 @@ let vel_max = document.getElementById("input_vel_max").value
 let vel_veiculo = document.getElementById("input_vel_veiculo").value
 
 function calculaVelocidade() {
-    let porcentagem = (input_vel_max.value / input_vel_veiculo.value) * 100
+    let porcentagem = ((input_vel_veiculo.value - input_vel_max.value) / input_vel_max.value) * 100
 
     if (porcentagem <= 20 ) {
         multa = "R$ 130,16"
@@ -17,5 +17,5 @@ function calculaVelocidade() {
     }
 
     let divResultado = document.getElementById("resultado")
-    divResultado.innerHTML = ("Você excedeu " + porcentagem + " a velocidade máxima. Sua multa é de " + multa)
+    divResultado.innerHTML = ("Você excedeu " + porcentagem + " % a velocidade máxima. Sua multa é de " + multa)
 }

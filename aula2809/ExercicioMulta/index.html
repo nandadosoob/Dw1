@@ -12,20 +12,15 @@
             box-sizing: border-box;
         }
 
-        body{
-            width: 100vw;
-            height: 100vh;
-        }
-
         .container{
             background-color: white;
-            width: 65%;
-            height: 40%;
+            width: 65vw;
+            height: 40vh;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;        
+            flex-wrap: wrap;
+            justify-content: space-around;  
         }
-
 
         #calcVelocidade{
             width: 30vw;
@@ -35,7 +30,6 @@
             border-radius: 5px;
             border: 1px solid black;
             padding: 30px;
-
         }
         
         #inf{
@@ -51,6 +45,8 @@
         #resultado{
             background-color: red;
             color: black;
+            width: auto;
+            height: auto;
         }
 
         input{
@@ -64,8 +60,6 @@
             border-radius: 10px;
         }
 
-
-
     </style>
 
 </head>
@@ -73,6 +67,7 @@
     
     
     <h1>Sistema de Multas</h1>
+    <br>
     <div class="container">
         <div id="calcVelocidade">
             <label for="input_vel_max">Velocidade Maxima da via: </label>
