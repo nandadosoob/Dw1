@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+
+    <style>
+
+        :root{
+            --cor1: #FD7401;
+            --cor2: #F1F3F6;
+            --cor3: #1E2772;
+            --cor4: #C2C2C2;
+            --cor5: #555555;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-areas: 
+            "l1 m1";
+
+            
+        }
+
+        #lado{
+            grid-area: l1;
+            background-color: var(--cor2);
+            border: 1px solid var(--cor5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 10px;
+
+        }
+
+        #principal{
+            grid-area: m1;
+            background-color: var(--cor4);
+            border: 1px solid var(--cor5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
+        #log{
+            color: var(--cor3);
+        }
+
+        #reg{
+            color: var(--cor1);
+        }
+
+        #ilustracao{
+            width: 632px;
+            height: 632px;
+        }
+
+        #logo{
+            width: 218px;
+            height: 59.54px;
+        }
+
+        #input_nome{
+            width: 410px;
+            height: 84px;
+        }
+
+        #input_email{
+            width: 410px;
+            height: 84px;
+
+        }
+
+        #input_senha{
+            width: 410px;
+            height: 84px;
+
+        }
+
+        #esqueci{
+
+        }
+
+        button{
+            background-color: var(--cor1);
+            border-radius: 10px;
+            
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <sidebar id=lado>
+            <a href="" id="log"> Login</a>
+            <a href="" id="reg"> Register</a>
+            <img id="logo" src="logo.png">
+            <h4>Create your account</h4>
+
+            <label for="input_nome">Full Name</label>
+            <input type="text" id="input_nome">
+       
+
+            <label for="input_email">Email</label>
+            <input type="text" id="input_email">
+
+
+            <label for="input_senha">Password</label>
+            <input type="text" id="input_senha">
+            
+            <a href="" id="esqueci">Forgot Password?</a>
+
+            <button onclick="create_account()">Create Account</button>
+
+
+            
+
+        </sidebar>
+
+        <main id="principal">
+            <img id="ilustracao" src="login-illustrator.png">
+        </main>
+
+
+
+    </div>
+
+</body>
+</html>
