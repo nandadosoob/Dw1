@@ -13,25 +13,40 @@
         }
 
         .container{
-            width: 100vw;
-            height: 100vh;
             background-color: white;
+            width: 65vw;
+            height: 40vh;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;  
         }
 
-
         #calcVelocidade{
-            width: 40vw;
+            width: 30vw;
             height: 40vh;
             display: grid;
             background-color: lightgray;
-            border-radius: 10px;
+            border-radius: 5px;
             border: 1px solid black;
             padding: 30px;
+        }
+        
+        #inf{
+            width: 30vw;
+            height: 40vh;
+            display: grid;
+            background-color: lightgray;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 30px;
+        }
 
+        #resultado{
+            background-color: red;
+            color: black;
+            width: auto;
+            height: auto;
         }
 
         input{
@@ -45,17 +60,6 @@
             border-radius: 10px;
         }
 
-
-        #inf{
-            width: 40vw;
-            height: 40vh;
-            display: grid;
-            background-color: lightgray;
-            border-radius: 10px;
-            border: 1px solid black;
-            padding: 30px;
-        }
-
     </style>
 
 </head>
@@ -63,6 +67,7 @@
     
     
     <h1>Sistema de Multas</h1>
+    <br>
     <div class="container">
         <div id="calcVelocidade">
             <label for="input_vel_max">Velocidade Maxima da via: </label>
@@ -78,14 +83,17 @@
 
         </div>
 
-    <div id="inf">
-        <p>Multa por excesso de velocidade:</p>
-                
-        <p><strong>R$ 130,16</strong> - Até 20% acima do limite permitido</p>
-        <p><strong>$ 195,23</strong> - De 20% até 50% acima do limite permitido</p>
-        <p><strong>$ 880,41</strong> - Acima de 50% do limite permitido</p>
+        <div id="inf">
+            <p>Multa por excesso de velocidade:</p>
+            <p><strong>R$ 130,16</strong> - Até 20% acima do limite permitido</p>
+            <p><strong>$ 195,23</strong> - De 20% até 50% acima do limite permitido</p>
+            <p><strong>$ 880,41</strong> - Acima de 50% do limite permitido</p>
+        </div>
 
-    </div>
+        <div id="resultado">
+
+        </div>
+
     </div>
 
 

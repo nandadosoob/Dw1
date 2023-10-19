@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Repetição</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 15% auto 10%;
+            grid-template-columns: 20% auto;
+            grid-template-areas: 
+            "t1 t1"
+            "s1 m1"
+            "r1 r1";
+        }
+
+        .topo{
+            grid-area: t1;
+            background-color: aliceblue;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .sidebar{
+            grid-area: s1;
+            background-color: aliceblue;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0 0 0;
+          
+        }
+
+        .main{
+            grid-area: m1;
+            background-color: aliceblue;
+            border: 1px solid black;
+        }
+
+        .rodape{
+            grid-area: r1;
+            background-color: aliceblue;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        button{
+            width: 100%;
+            height: 10%;
+           
+        }
+
+   
+    </style>
+
+    <div class="container">
+        <div class="topo"> <h2>Desenvolvimento Web 1</h2> <br> <h3>Técnico Integrado em Informática para Internet</h3></div>
+
+        <div class="sidebar"> <h3>Exercícios</h3> <br>
+            <button onclick="ex01()">Exercício 1</button>
+            <button onclick="ex02()">Exercício 2</button>
+            <button onclick="ex03()">Exercício 3</button>
+            <button onclick="ex04()">Exercício 4</button>
+            <button onclick="ex05()">Exercício 5</button>
+            <button onclick="ex06()">Exercício 6</button>
+            <button onclick="ex07()">Exercício 7</button>
+        </div>
+        
+        <div class="main">
+            <div class="exercicio1">
+                <label for="ex1"></label>
+
+            </div>
+
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            
+        </div>
+
+        <div class="rodape"><h3>Universidade Técnológica Federal Do Paraná - Câmpus Campo Mourão</h3></div>
+    </div>
+    <script src="./calc.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
