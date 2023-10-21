@@ -51,20 +51,23 @@
             border: 1px solid var(--cor5);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-
             padding: 10px;
 
         }
 
+        #cima{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 25px 25px 100px 25px;
+        }
+
         #log{
             color: var(--cor3);
-            align-self: self-start;
         }
 
         #reg{
             color: var(--cor1);
-            align-self: self-end;
         }
 
         #ilustracao{
@@ -76,6 +79,7 @@
             width: 218px;
             height: 59.54px;
             align-self: center;   
+        
         }
 
         h3{
@@ -124,9 +128,13 @@
 <body>
     
     <div class="container">
-        <sidebar id=lado>
+        <sidebar id="lado">
+
+            <div id="cima">
             <a href="./login/pglogin.html" id="log"> Login</a> 
             <a href="./pginscricao.html" id="reg"> Register</a>
+            </div>
+
             <img id="logo" src="logo.png">
             
             <h3>Create your account</h3>
