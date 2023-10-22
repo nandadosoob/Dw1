@@ -21,14 +21,19 @@ function ex02() {
 
     resultado.innerHTML = "";
 
-    if (inicio <= fim) {
+    for (let i = inicio; i <= fim; i++) {
+        let resul = num * i;
+        resultado.innerHTML += `${num}x${i} = ${resul}<br>`;
+    }
+
+    /*if (inicio <= fim) {
         for (let i = inicio; i <= fim; i++) {
             let resul = num * i;
             resultado.innerHTML += `${num}x${i} = ${resul}<br>`;
-        }
+            }
     } else {
         resultado.innerHTML = "O início deve ser menor ou igual ao fim.";
-    }
+    }*/
 
 }
 
@@ -53,12 +58,16 @@ function ex03() {
 
 
 function ex04() {
-
+    let preco = document.getElementById("input_numero").value;
+    let resultado = document.getElementById("resultado");
+    
 }
 
 
 
 function ex05() {
+    let numero = document.getElementById("input_numero").value;
+    let resultado = document.getElementById("resultado");
 
     
 
@@ -67,11 +76,20 @@ function ex05() {
 
 
 function ex06() {
-
+    let numero = document.getElementById("input_numero").value;
+    resultado.innerHTML = Math.floor(Math.random() * (numero - 1 + 1)) + 1;
 }
 
 
 
+
 function ex07() {
+    let capital = document.getElementById("input_capital").value;
+    let taxa = document.getElementById("input_taxa").value;
+    let periodo = document.getElementById("input_periodo").value;
+    let resultado = document.getElementById("resultado");
     
+    let montante = capital * Math.pow(1 + taxa, periodo);
+    resultado.innerHTML = `O montante final é: ${montante.toFixed(2)}`;
+
 }

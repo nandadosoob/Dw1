@@ -14,6 +14,7 @@
             --cor4: #C2C2C2;
             --cor5: #555555;
             --cor6: #FFFFFF;
+            --cor7: red;
         }
 
         * {
@@ -116,11 +117,11 @@
             height: 50px;
             border: 0;
             align-self: center;
-
-            
         }
 
-
+        p{
+            color: var(--cor7);
+        }
 
     </style>
 
@@ -149,12 +150,14 @@
           
             <label for="input_senha" id="senha">Password</label>
             <input type="text" id="input_senha">
+            <p id="erro_senha"></p>
+            <p id="erro_campo"></p>
             
             <a href="" id="esqueci">Forgot Password?</a>
 
             <br>
      
-            <button onclick="create_account()">Create Account</button>
+            <button onclick="qnt_senha()">Create Account</button>
 
 
             
@@ -165,7 +168,7 @@
             <img id="ilustracao" src="login-illustrator.png">
         </main>
 
-
+        <script src="calculo.js"></script>
 
     </div>
 

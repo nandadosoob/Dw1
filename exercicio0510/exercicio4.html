@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box{
+            background-color: lightblue;
+            width: 400px;
+            height: 550px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+
+        h1{
+            align-self: center;
+        }
+
+        #preco{
+            padding: 0 0 0 30px;
+        }
+
+        input{
+            width: 350px;
+            height: 45px;
+            border-radius: 8px;
+            border: 0;
+            align-self: center;
+
+        }
+
+        button{
+            width: 350px;
+            height: 45px;
+            border-radius: 8px;
+            border: 0;
+            align-self: center;
+            background-color: rgb(113, 219, 255);
+            color: white;
+        }
+
+        #resultado{
+            background-color: white;
+            width: 350px;
+            height: 250px;
+            border-radius: 8px;
+            align-self: center;
+        }
+
+        a{
+            align-self: self-end;
+            padding: 0 20px 0 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="box">
+            <h1>Valores do carro</h1>
+            <label for="input_numero" id="preco">entre com o preço do seu carro:</label>
+            <input type="number" id="input_numero">
+            <script src="./calculo.js"></script>
+            <button onclick="ex04()">Calcular</button>
+
+            <div id="resultado">
+
+            </div>
+            <a href="./exercicio_repeticao.html">Voltar</a>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
