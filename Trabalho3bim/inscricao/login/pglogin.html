@@ -100,6 +100,7 @@
             border-radius: 8px;
             align-self: center;
             padding: 0 0 0 10px;
+            outline: none;
             
         }
 
@@ -138,9 +139,21 @@
             align-items: center;
         }
     
-        i {
+        /*i {
             width: 24px;
             height: 24px;
+            background-color: var(--cor1);
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }*/
+
+        #envelope{
+            width: 50px;
+            height: 50px;
+            Top: 438px;
+            Left: 395px;
+            background-color: var(--cor1);
         }
 
 
@@ -162,14 +175,17 @@
             
             <label for="input_email" id="email">Email Address</label>
             <!--<div id="retangulo"><img src="Vector.png" id="vetor"></div>-->
-            <input type="text" id="input_email" placeholder="alex@email.com">
-            <i class="fa-sharp fa-regular fa-envelope" style="color: #cb0000;"></i>
+            <div>
+                <input type="text" id="input_email" placeholder="alex@email.com">
+                <i class="fa-sharp fa-regular fa-envelope" id="envelope"></i>
+
+            </div>
 
           
             <label for="input_senha" id="senha">Password</label>
             <!--<div id="retangulo"><img src="Frame.png" id="frame"></div>--->
             <input type="text" id="input_senha" placeholder="Enter your password">
-            <i class="fa-sharp fa-regular fa-lock-keyhole" style="color: #ffffff;"></i>
+            <i class="fa-sharp fa-regular fa-lock-keyhole" id="cadeado"></i>
             
             <a href="" id="esqueci">Forgot Password?</a>
 
