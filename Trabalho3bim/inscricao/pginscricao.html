@@ -64,11 +64,13 @@
         }
 
         #log{
-            color: var(--cor3);
+            color: var(--cor1);
+            text-decoration: none;
         }
 
         #reg{
-            color: var(--cor1);
+            color: var(--cor3);
+            text-decoration: none;
         }
 
         #ilustracao{
@@ -94,6 +96,7 @@
             border: 0;
             border-radius: 8px;
             align-self: center;
+            padding: 0 0 0 10px;
         }
 
         #nome, #email, #senha{
@@ -141,17 +144,15 @@
             <h3>Create your account</h3>
             
             <label for="input_nome" id="nome">Full Name</label>
-            <input type="text" id="input_nome">
+            <input type="text" id="input_nome" placeholder="John Doe">
            
 
             <label for="input_email" id="email">Email</label>
-            <input type="text" id="input_email">
+            <input type="text" id="input_email" placeholder="john@email.com">
 
           
             <label for="input_senha" id="senha">Password</label>
-            <input type="text" id="input_senha">
-            <p id="erro_senha"></p>
-            <p id="erro_campo"></p>
+            <input type="text" id="input_senha" placeholder="Enter your password">
             
             <a href="" id="esqueci">Forgot Password?</a>
 

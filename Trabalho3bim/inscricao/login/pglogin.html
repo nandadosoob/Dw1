@@ -63,12 +63,14 @@
 
 
         #log{
-            color: var(--cor3);
+            color: var(--cor1);
+            text-decoration: none;
         }
 
 
         #reg{
-            color: var(--cor1);
+            color: var(--cor3);
+            text-decoration: none;
         }
 
 
@@ -97,6 +99,8 @@
             border: 0;
             border-radius: 8px;
             align-self: center;
+            padding: 0 0 0 10px;
+            
         }
 
 
@@ -123,7 +127,21 @@
             align-self: center;
         }
 
+        #retangulo {
+            background-color: var(--cor1);
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     
+        #vetor, #frame {
+            width: 24px;
+            height: 24px;
+        }
 
     </style>
 
@@ -142,19 +160,19 @@
             <h3>Login into your account</h3>
             
             <label for="input_email" id="email">Email Address</label>
-            <input type="text" id="input_email">
+            <div id="retangulo"><img src="Vector.png" id="vetor"></div>
+            <input type="text" id="input_email" placeholder="alex@email.com">
 
           
             <label for="input_senha" id="senha">Password</label>
-            <input type="text" id="input_senha">
-
-            <p id="erro"></p>
+            <div id="retangulo"><img src="Frame.png" id="frame"></div>
+            <input type="text" id="input_senha" placeholder="Enter your password">
             
             <a href="" id="esqueci">Forgot Password?</a>
 
             <br>
      
-            <button onclick="create_account()">Create Account</button>
+            <button onclick="login()">Login</button>
         </sidebar>
 
 

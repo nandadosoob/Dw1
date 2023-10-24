@@ -1,13 +1,14 @@
-function preenchido() {
-    let email = document.getElementById("input_email").value;
-    let senha = document.getElementById("input_senha").value;
-    let erro = document.getElementById("erro").value
+function login() {
+    let email = document.getElementById("input_email").value
+    let senha = document.getElementById("input_senha").value
 
-    if (email.length < 1 && senha.length < 1) {
-        erro = "Todos os campos devem ser preenchidos"
+    if (email == "" || senha == "") {
+        alert("Todos os campos devem ser preenchidos");
+    }else if (email != "admin@email.com.br") {
+        alert("Email incorreto");
+    } else if (senha != "#dw1UTFPR#") {
+        alert("Senha incorreta");
+    } else {
+        alert("Usuario autenticado");
     }
-    else{
-        erro = "";
-    }
-
 }
