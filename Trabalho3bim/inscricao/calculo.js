@@ -16,9 +16,9 @@ function validar() {
 
     else {
         alert("Cadastro realizado");
-        nome.innerHTML = "";
-        email.innerHTML = "";
-        senha.innerHTML = "";
+        document.getElementById("input_nome").value = "";
+        document.getElementById("input_email").value = "";
+        document.getElementById("input_senha").value = "";
     }
 }
 
