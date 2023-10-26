@@ -51,6 +51,7 @@
             padding: 10px 35px;
         }
 
+
         #cima{
             display: flex;
             flex-direction: row;
@@ -97,11 +98,10 @@
             background-color: var(--cor2);
             border: 0;
             border-radius: 8px 0 0 8px;
-            /* border-top-left-radius: 8px;
-            border-bottom-left-radius: 8px; */
             align-self: center;
             padding: 0 0 0 15px;
         }
+
 
         #nome, #email, #senha{
             color: var(--cor5);
@@ -138,25 +138,18 @@
         
         #butt{
             background-color: var(--cor1);
-            display: flex;
-           
-            justify-content: center;
-            align-items: center;
-
             width: 50px;
             height: 50px;
             border: 0;
             border-radius: 0 8px 8px 0;
-            
-            /* border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px; */
         }
+
 
         #icon {
             width: 24px;
             height: 24px;
-           
         }
+
 
         ::placeholder{
             font-size: 16px;
@@ -181,7 +174,7 @@
             <label for="input_email" id="email">Email Address</label>
             <div id="loginn">
                 <input type="text" id="input_email" placeholder="alex@email.com">
-                <div id="butt"><img src="Vector.png" id="icon"></div>
+                <button id="butt"><img src="Vector.png" id="icon"></button>
             </div>
 
             <label for="input_senha" id="senha">Password</label>
@@ -189,8 +182,6 @@
                 <input type="text" id="input_senha" placeholder="Enter your password">
                 <button id="butt"><img src="Frame.png" id="icon"></button>
             </div>
-
-            
             
             <a href="" id="esqueci">Forgot Password?</a>
 
