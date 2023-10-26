@@ -37,7 +37,6 @@
         #principal{
             grid-area: m1;
             background-color: var(--cor2);
-            border: 1px solid var(--cor5);
             display: flex;
             justify-content: center;
             align-items: center;   
@@ -47,17 +46,17 @@
         #lado{
             grid-area: l1;
             background-color: var(--cor6);
-            border: 1px solid var(--cor5);
             display: flex;
             flex-direction: column;
-            padding: 10px 35px 0 35px;
+            padding: 10px 35px;
         }
 
         #cima{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 25px 25px 120px 25px;
+            padding: 25px 25px 75px 25px;
+            font-weight: bold;
         }
 
 
@@ -97,7 +96,9 @@
             height: 50px;
             background-color: var(--cor2);
             border: 0;
-            border-radius: 8px;
+            border-radius: 8px 0 0 8px;
+            /* border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px; */
             align-self: center;
             padding: 0 0 0 15px;
         }
@@ -111,7 +112,8 @@
         #esqueci{
             color: var(--cor3);
             align-self: self-end;
-            size: 14px;
+            padding: 10px 0 30px 0;
+            font-size: small;
         }
 
 
@@ -123,10 +125,11 @@
             height: 50px;
             border: 0;
             align-self: center;
+            cursor: pointer;
         }
 
 
-        #login_email{
+        #loginn{
             display: flex;
             width: 410px;
             height: 50px;
@@ -135,10 +138,24 @@
         
         #butt{
             background-color: var(--cor1);
+            display: flex;
+           
+            justify-content: center;
+            align-items: center;
+
             width: 50px;
             height: 50px;
             border: 0;
-            border-radius: 8px;
+            border-radius: 0 8px 8px 0;
+            
+            /* border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px; */
+        }
+
+        #icon {
+            width: 24px;
+            height: 24px;
+           
         }
 
         ::placeholder{
@@ -162,17 +179,18 @@
             <h3>Login into your account</h3>
             
             <label for="input_email" id="email">Email Address</label>
-            <div id="login_email">
+            <div id="loginn">
                 <input type="text" id="input_email" placeholder="alex@email.com">
-                <button id="butt"><img src="Vector.png" id="icon"></button>
+                <div id="butt"><img src="Vector.png" id="icon"></div>
             </div>
 
             <label for="input_senha" id="senha">Password</label>
-            <div id="login_email">
+            <div id="loginn">
                 <input type="text" id="input_senha" placeholder="Enter your password">
                 <button id="butt"><img src="Frame.png" id="icon"></button>
             </div>
 
+            
             
             <a href="" id="esqueci">Forgot Password?</a>
 

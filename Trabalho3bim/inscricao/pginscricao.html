@@ -39,7 +39,6 @@
         #principal{
             grid-area: m1;
             background-color: var(--cor2);
-            border: 1px solid var(--cor5);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,10 +48,9 @@
         #lado{
             grid-area: l1;
             background-color: var(--cor6);
-            border: 1px solid var(--cor5);
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            padding: 10px 35px;
 
         }
 
@@ -61,15 +59,16 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 25px 25px 75px 25px;
+            font-weight: bold;
         }
 
         #log{
-            color: var(--cor1);
+            color: var(--cor3);
             text-decoration: none;
         }
 
         #reg{
-            color: var(--cor3);
+            color: var(--cor1);
             text-decoration: none;
         }
 
@@ -110,7 +109,8 @@
         #esqueci{
             color: var(--cor3);
             align-self: self-end;
-            size: 14px;
+            font-size: small;
+            padding: 10px 0 30px 0;
         }
 
         button{
@@ -121,6 +121,7 @@
             height: 50px;
             border: 0;
             align-self: center;
+            cursor: pointer;
         }
 
         p{
@@ -161,7 +162,7 @@
             
             <a href="" id="esqueci">Forgot Password?</a>
 
-            <br>
+            
      
             <button onclick="validar()">Create Account</button>
 

@@ -1,6 +1,3 @@
-//let erro_senha = document.getElementById("erro_senha").value
-//let erro_campo = document.getElementById("erro_campo").value
-
 function validar() { 
     let nome = document.getElementById("input_nome").value
     let email = document.getElementById("input_email").value
