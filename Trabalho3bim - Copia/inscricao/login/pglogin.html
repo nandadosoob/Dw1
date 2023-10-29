@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <style>
+
+        :root{
+            --cor1: #FD7401;
+            --cor2: #F1F3F6;
+            --cor3: #1E2772;
+            --cor4: #C2C2C2;
+            --cor5: #555555;
+            --cor6: #FFFFFF;
+        }
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 480px auto;
+            grid-template-areas: 
+            "l1 m1";
+        }
+
+        
+        #principal{
+            grid-area: m1;
+            background-color: var(--cor2);
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+
+        
+        #lado{
+            grid-area: l1;
+            background-color: var(--cor6);
+            display: flex;
+            flex-direction: column;
+            padding: 10px 35px;
+        }
+
+
+        #cima{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 25px 25px 75px 25px;
+            font-weight: bold;
+        }
+
+
+        #log{
+            color: var(--cor1);
+            text-decoration: none;
+        }
+
+
+        #reg{
+            color: var(--cor3);
+            text-decoration: none;
+        }
+
+
+        #ilustracao{
+            width: 632px;
+            height: 632px;
+        }
+
+
+        #logo{
+            width: 218px;
+            height: 59.54px;
+            align-self: center;   
+        }
+
+
+        h3{
+            align-self: center;
+            padding: 15px 0 30px 0;
+        }
+
+
+        input{
+            width: 360px;
+            height: 50px;
+            background-color: var(--cor2);
+            border: 0;
+            border-radius: 8px 0 0 8px;
+            align-self: center;
+            padding: 0 0 0 15px;
+        }
+
+
+        #nome, #email, #senha{
+            color: var(--cor5);
+            padding: 15px 10px 10px 4px;
+        }
+
+
+        #esqueci{
+            color: var(--cor3);
+            align-self: self-end;
+            padding: 10px 0 30px 0;
+            font-size: small;
+        }
+
+
+        #logar{
+            background-color: var(--cor1);
+            color: var(--cor6);
+            border-radius: 8px;
+            width: 410px;
+            height: 50px;
+            border: 0;
+            align-self: center;
+            cursor: pointer;
+        }
+
+
+        #loginn{
+            display: flex;
+            width: 410px;
+            height: 50px;
+        }
+        
+        
+        #butt{
+            background-color: var(--cor1);
+            width: 50px;
+            height: 50px;
+            border: 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+
+        #icon {
+            width: 24px;
+            height: 24px;
+        }
+
+
+        ::placeholder{
+            font-size: 16px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <sidebar id="lado">
+            <div id="cima">
+            <a href="pglogin.html" id="log"> Login</a> 
+            <a href="../pginscricao.html" id="reg"> Register</a>
+            </div>
+
+            <img id="logo" src="logo (cópia).png">
+            
+            <h3>Login into your account</h3>
+            
+            <label for="input_email" id="email">Email Address</label>
+            <div id="loginn">
+                <input type="text" id="input_email" placeholder="alex@email.com">
+                <button id="butt"><img src="Vector.png" id="icon"></button>
+            </div>
+
+            <label for="input_senha" id="senha">Password</label>
+            <div id="loginn">
+                <input type="text" id="input_senha" placeholder="Enter your password">
+                <button id="butt"><img src="Frame.png" id="icon"></button>
+            </div>
+            
+            <a href="" id="esqueci">Forgot Password?</a>
+
+            <br>
+     
+            <button onclick="login()" id="logar">Login</button>
+        </sidebar>
+        
+        <main id="principal">
+            <img id="ilustracao" src="login-illustrator.png">
+        </main>
+
+        <script src="calc.js"></script>
+
+    </div>
+
+</body>
+</html>
