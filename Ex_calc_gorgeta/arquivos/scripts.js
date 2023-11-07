@@ -1,15 +1,15 @@
 function calculo_gorjeta() {
-    let val_conta = document.getElementById("valorConta").value;
-    let porcentagem = document.getElementById("qualidadeServico").value;
+    const val_conta = parseFloat(document.getElementById("valorConta").value);
+    const porcentagem = parseFloat(document.getElementById("qualidadeServico").value);
     
-    if (val_conta === "" || porcentagem === "") {
+    if (isNaN(val_conta)) {
         alert("Todos os campos devem ser preenchidos");
     }else{
-        let resultado_gorjeta = document.getElementsById("tipoConta");
-        let resultado_total = document.getElementsById("valorTotal");
-
-        resultado_gorjeta.innerHTML =  (porcentagem * val_conta)
-        resultado_total.innerHTML = (val_conta + resultado_gorjeta)
+        const resultado_gorjeta = (porcentagem * val_conta);
+        const resultado_total = (val_conta + resultado_gorjeta);
+        
+        document.getElementById("tipoConta").value = "R$ " + resultado_gorjeta;
+        document.getElementById("valorTotal").value = "R$ " + resultado_total;
     }
 
 }

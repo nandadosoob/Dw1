@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio1</title>
+    <title>Exercicio4</title>
 
     <style>
 
@@ -36,7 +36,7 @@
             align-self: center;
         }
 
-        #preco{
+        #preco, p{
             padding: 0 0 0 30px;
         }
 
@@ -59,10 +59,18 @@
             color: white;
         }
 
-        #resultado{
+        #p_final, #qnt_par, #val_par{
             background-color: white;
             width: 350px;
-            height: 250px;
+            height: 45px;
+            border-radius: 8px;
+            align-self: center;
+        }
+
+        #parcelas {
+            background-color: white;
+            width: 350px;
+            height: 45px;
             border-radius: 8px;
             align-self: center;
         }
@@ -82,18 +90,62 @@
             <h1>Valores do carro</h1>
             <label for="input_numero" id="preco">entre com o preço do seu carro:</label>
             <input type="number" id="input_numero">
-            <script src="./calculo.js"></script>
+
+            <select id="parcelas"> 
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="18">18</option>
+              </select>
+
             <button onclick="ex04()">Calcular</button>
 
-            <div id="resultado">
+            <p>Preço final:</p>
+            <div id="p_final"></div>
 
-            </div>
+            <p>Quantidade de parcelas:</p>
+            <div id="qnt_par"></div>
+
+            <p>valor da parcela:</p>
+            <div id="val_par"></div>
+
             <a href="./exercicio_repeticao.html">Voltar</a>
 
         </div>
 
 
     </div>
+
+    <script>
+        function ex04() {
+            let preco = parseInt(document.getElementById("input_numero").value);
+            let parcelas = parseInt(document.getElementById("parcelas").value);
+
+            let desconto = 0;
+            if (parcelas === 1) {
+                desconto = 0.2;
+            }
+
+        let acrescimo = 0;
+            if (parcelas = 6) {
+                acrescimo = 0.03;
+            } else if (parcelas = 12) {
+                acrescimo = 0.06; 
+            } else if (parcelas = 18) {
+                acrescimo = 0.09; 
+            }
+           
+
+        const precoFinal = preco * (1 - desconto) * (1 + acrescimo);
+        const valorParcela = precoFinal / parcelas;
+
+        document.getElementById('p_final').textContent = precoFinal;
+        document.getElementById('qnt_par').textContent = parcelas;
+        document.getElementById('val_par').textContent = valorParcela;
+    }
+
+
+    </script>
+
 
 </body>
 </html>

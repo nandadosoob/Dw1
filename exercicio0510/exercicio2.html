@@ -98,11 +98,28 @@
             </div>
             <a href="./exercicio_repeticao.html">Voltar</a>
             
-            <script src="./calculo.js"></script>
+    
         </div>
         
         
     </div>
+
+    <script>
+        function ex02() {
+            let num = parseInt(document.getElementById("input_numero").value);
+            let inicio = parseInt(document.getElementsById("input_comeco").value);
+            let fim = parseInt(document.getElementById("input_final").value);
+            let resultado = document.getElementById("resultado");
+
+            resultado.innerHTML = "";
+
+            for (let i = inicio; i <= fim; i++) {
+                let mult = num * i;
+                resultado.innerHTML += `${num}x${i} = ${mult}<br>`;
+            }
+    
+        }
+    </script>
 
 </body>
 </html>

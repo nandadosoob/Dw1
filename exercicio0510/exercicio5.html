@@ -83,8 +83,8 @@
             <label for="input_numero" id="escolha">entre com um numero:</label>
             <input type="number" id="input_numero">
             
-            <script src="./calculo.js"></script>
-            <button onclick="ex05()">Calcular</button>
+            <!---<script src="./calculo.js"></script>-->
+            <button onclick="calcularPrimos()">Calcular</button>
 
             <div id="resultado">
 
@@ -95,6 +95,43 @@
 
 
     </div>
+
+    <script>
+        let num = document.getElementById("input_numero").value;
+        function isPrime(num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function calcularPrimos() {
+        const n = parseInt(document.getElementById('input_numero').value);
+        
+        if (isNaN(n) || n < 1) {
+            alert('Por favor, insira um número inteiro positivo.');
+            return;
+        }
+
+        let primeNumbers = [];
+        let currentNumber = 2; // Começamos com 2, o primeiro número primo
+
+        while (primeNumbers.length < n) {
+            if (isPrime(currentNumber)) {
+                primeNumbers.push(currentNumber);
+            }
+            currentNumber++;
+        }
+
+        document.getElementById('resultado').textContent = `Os ${n} primeiros números primos são: ${primeNumbers.join(', ')}`;
+    }
+
+    </script>
 
 </body>
 </html>

@@ -82,7 +82,6 @@
             <h1>Sequência de Fibonacci</h1>
             <label for="input_numero" id="escolha">entre com um numero:</label>
             <input type="number" id="input_numero">
-            <script src="./calculo.js"></script>
             <button onclick="ex03()">Calcular</button>
 
             <div id="resultado">
@@ -94,6 +93,23 @@
 
 
     </div>
+    <script>
+        function ex03() {
+            let num = (document.getElementById("input_numero").value);
+            let resultado = document.getElementById("resultado");
 
+            resultado.innerHTML = ""; // Limpa o conteúdo anterior
+
+            let fib = [1, 1];
+
+            for (let i = 2; i < num; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+
+            resultado.innerHTML = "Sequência de Fibonacci: " + fib.join(", ");
+        }
+
+
+    </script>
 </body>
 </html>
