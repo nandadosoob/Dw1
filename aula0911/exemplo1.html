@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querities</title>
+    
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+        .container{
+            background-color: rgb(153, 128, 252);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+        h3#sm{
+            display: none;
+        }
+
+        h3#md{
+            display: none;
+        }
+        h3#lg{
+            display: none;
+        }
+        h3#xl{
+            display: none;
+    }
+
+    /* MEDIA QUERIES */
+    /* breakpoints
+    de 640px ate 767px -Small
+    de 768px ate 1023px -medium
+    de 1024px ate 1279px -large
+    de 1280px ate 1535px -extra large */
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .container{
+            background-color: lightblue;
+            }
+        
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        
+    }
+
+    @media screen and (min-width: 1280px) and (max-width: 1535px) {
+        
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>media queries</h1>
+        <h3 id="sm">small</h3>
+        <h3 id="md">medium</h3>
+        <h3 id="lg">large</h3>
+        <h3 id="xl">extra large</h3>
+    </div>
+    
+</body>
+</html>
