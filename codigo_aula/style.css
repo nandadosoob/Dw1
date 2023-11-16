@@ -43,7 +43,9 @@ nav .menu-mobile {
     height: calc(100vh - 100px);
     position: absolute;
     top: 100px;
-    left: 0;
+    right: 100%;
+    /* right: 100%; */
+    
 }
 
 nav .menu-mobile ul{
@@ -59,9 +61,18 @@ nav .menu-mobile ul{
     font-size: 1.3rem;
 }
 
-nav .menuIcon{
+@media screen and (min-width: 768px){
+    nav .menu-mobile{
+        display: none;
+    }
     
-}
+    nav .meuIcon{
+        display: none;
+    }
 
+    nav .menu-desktop{
+        display: flex;
+    }
+}
 
 
