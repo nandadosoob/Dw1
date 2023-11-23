@@ -1,7 +1,16 @@
-function puxar(){
-    let mob = document.querySelector(".menu-mobile")
-    mob.style.right="0";
+let menuMobile = document.querySelector(".menu-mobile")
+let menuIcon = document.querySelector(".menuIcon img")
 
-    //let mob2 = document.querySelector(".menu-mobile")
-    //mob2.style.right="100%";
+function puxar(){
+    //if (menuMobile.style.right === "100px"){
+
+        //menuIcon.getAttribute("src") === "icones/xmark-solid.svg"
+        //menuIcon.setAttribute("src", "icones/bars-solid.svg")
+        menuMobile.style.right="0";
+   // } 
+    //else if(menuIcon.getAttribute("src") === "icones/bars-solid.svg"){
+        //menuIcon.setAttribute("src", "icones/bars-solid.svg")
+     //   menuMobile.style.right="100%";
+    //}
+
 }
