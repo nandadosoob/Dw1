@@ -14,7 +14,6 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor2);
 }
 
 nav{
@@ -30,7 +29,7 @@ nav #menu-mobile{
     background-color: var(--cor2);
     color: var(--cor3);
     width: 100%;
-    height: calc(100%-100px);
+    height: calc(100vh - 100px);
     position: absolute;
     transition: 0,5s;
     right: 100%;
@@ -39,7 +38,7 @@ nav #menu-mobile{
 }
 
 nav #menu-mobile ul{
-    color: var(--cor3);
+    color: var(--cor2);
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -77,6 +76,10 @@ nav #icone img{
 nav #cadastro,#sobre,#inicio{
     text-decoration: none;
     color: var(--cor2);
+}
+
+button:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px){
