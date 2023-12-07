@@ -14,7 +14,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-
+    background-color: var(--cor2);
 }
 
 nav{
@@ -23,7 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 nav #menu-mobile{
@@ -34,10 +34,11 @@ nav #menu-mobile{
     position: absolute;
     transition: 0,5s;
     right: 100%;
+    top: 100px;
 
 }
 
-nav #menu-mobile-ul{
+nav #menu-mobile ul{
     color: var(--cor3);
     list-style: none;
     display: flex;
@@ -47,63 +48,47 @@ nav #menu-mobile-ul{
     font-size: 1rem;
     gap: 10px;
     height: 100%;
-    width: 100%;
+    font-size: 1.5rem;
 
 }
 
 nav #menu-desktop{
-    background-color: var(--cor2);
     display: none;
 }
 
-nav #menu-desktop-ul{
-    color: var(--cor3);
+nav #menu-desktop ul{
+    color: var(--cor2);
     list-style: none;
-
-
-
+    gap: 10px;
+    display: flex;
+    font-size: 1.5rem;
 }
-/*
-nav .icone{
 
-} 
+nav #av{
+    font-size: 1.5rem;
+    color: var(--cor2);
+}
 
 
+nav #icone img{
+    width: 20px;
+}
 
-
+nav #cadastro,#sobre,#inicio{
+    text-decoration: none;
+    color: var(--cor2);
+}
 
 @media screen and (min-width: 768px){
-    nav .menu-mobile{
+    nav #menu-mobile{
         display: none;
     }
     
-    nav .icone{
+    nav #icone{
         display: none;
     }
 
-    nav .menu-desktop{
+    nav #menu-desktop{
         display: flex;
     }
 }
-
-
-
-
-
-/* 
-.nav-container{
-    background-color: var(--cor1);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-a{
-    text-decoration: none;
-    font-size: 35px;
-    color: var(--cor2);
-} */
