@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+
+:root{
+    --cor1: #b90b04;
+    --cor2: black;
+    --cor3: white;
+    --cor4: 
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor2);
+}
+
+nav{
+    background-color: var(--cor1);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav #menu-mobile{
+    background-color: var(--cor1);
+    color: var(--cor3);
+    width: 100%;
+    height: calc(200vh - 100px);
+    position: absolute;
+    transition: 0,5s;
+    right: 100%;
+    top: 100px; 
+
+}
+
+nav #menu-mobile ul{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 10px;
+    height: 100%;
+    font-size: 1.5rem;
+
+}
+
+nav #menu-desktop{
+    display: none;
+}
+
+nav #menu-desktop ul{
+    color: var(--cor2);
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    font-size: 1.5rem;
+    background-color: var(--cor1);
+}
+
+nav #av{
+    font-size: 1.5rem;
+    color: var(--cor2);
+    background-color: var(--cor1);
+}
+
+
+nav #icone img{
+    width: 20px;
+}
+
+nav #cadastro,#inicio,#vizualizar{
+    text-decoration:none;
+    color: var(--cor2);
+
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* MAIN - STYLE */
+
+main {
+    color: var(--cor3);
+    background-color: var(--cor2);
+    
+}
+
+.box1-desktop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    
+}
+
+.box1-desktop{
+    display: none;
+}
+
+.box1-desktop ul{
+    list-style: none;
+    gap: 100px;
+    display: flex;
+    padding: 50px 20px;
+    background-color: var(--cor2);
+    
+}
+
+#lista-filmes{
+    list-style: none;
+}
+
+.box2-mobile{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor2);
+    width: 100vw;
+    height: 180vh;
+}
+
+
+.box2-mobile ul{
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    top: 150px;
+    gap: 50px;
+   
+}
+
+#poster{
+    width: 250px; 
+}
+
+
+@media screen and (min-width: 768px){
+    nav #menu-mobile{
+        display: none;
+    }
+    
+    nav #icone{
+        display: none;
+    }
+
+    nav #menu-desktop{
+        display: flex;
+    }
+
+    main .box1-desktop{
+        display: flex;
+    }
+
+    main .box2-mobile{
+        display: none;
+    }
+}
+/* 
+@media screen and (max-width: 767px){
+    main .box1-desktop{
+        display: none;
+    }
+
+    main .box2-mobile{
+        display: flex;
+    }
+} */

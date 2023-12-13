@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div id="av">Avaliação de filmes</div> 
+                <div id="menu-desktop">
+                    <ul>
+                        <li><a href="./index.html" id="inicio">Início</a></li>
+                        <li><a href="../cadastra_filmes/index.html" id="cadastro">Cadastrar</a></li>
+                        <li><a href="" id="vizualizar">Visualização</a></li>
+                    </ul>
+                </div>
+                
+                <div id="icone" onclick="menu()">
+                    <img src="./icones/bars-solid.svg" id="img-icone" alt="">
+                </div>
+                
+                <div id="menu-mobile">
+                    <ul>
+                        <li><a href="./index.html" id="inicio">Início</a></li>
+                        <li><a href="../cadastra_filmes/index.html" id="cadastro">Cadastrar</a></li>
+                        <li><a href="" id="vizualizar">Visualização</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+
+        </header>
+        
+        <main>
+            <div class="box1-desktop">
+                <ul id="lista-filmes">
+                    <li id="filme1-desktop"> 
+                        <img src="../poster_filmes_DW/o-novo-poster-de-o-rei-leao-1557252821343_v2_450x600.jpg" id="poster"></li>
+                        
+                    <li id="filme2-desktop"> 
+                        <img src="../poster_filmes_DW/poster_it_a_coisa.webp" id="poster"></li>
+                            
+                    <li id="filme3-desktop"> 
+                        <img src="../poster_filmes_DW/Twilight_Poster.jpg" id="poster"></li>
+                </ul>
+            </div>
+                    
+            <div class="box2-mobile">
+                <ul id="lista-filmes">
+                    <li id="filme1-mobile"> 
+                        <img src="../poster_filmes_DW/o-novo-poster-de-o-rei-leao-1557252821343_v2_450x600.jpg" id="poster"> 
+                    </li>
+                            
+                    <li id="filme2-mobile"> 
+                        <img src="../poster_filmes_DW/poster_it_a_coisa.webp" id="poster">
+                    </li>
+                            
+                    <li id="filme3-mobile">
+                        <img src="../poster_filmes_DW/Twilight_Poster.jpg" id="poster">
+                    </li>
+                </ul>
+            </div>
+                    
+        </main>
+                
+    </div>
+            
+            
+            <!-- mostrar uma tabela ao envés de ligar com o bd -->
+            
+<script src="./script.js"></script>
+</body>
+</html>

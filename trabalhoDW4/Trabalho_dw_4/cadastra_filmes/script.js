@@ -20,3 +20,18 @@ function validar() {
         document.getElementById("duracao").value = "";
     }
 }
+
+let mobile = document.querySelector("#menu-mobile")
+let icone = document.querySelector("#img-icone")
+
+function menu(){
+    if (mobile.style.right === '100%'){
+        mobile.style.right = '0'
+        icone.src = "../mostra_filmes/icones/xmark-solid.svg"
+    }
+
+    else{
+        mobile.style.right = '100%'
+        icone.src = "../mostra_filmes/icones/bars-solid.svg"
+    }
+}
