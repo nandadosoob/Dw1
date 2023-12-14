@@ -1,3 +1,16 @@
+.modo-claro {
+    --cor2: white;
+    --cor3: black;
+    --cor1: #cd0700;
+}
+
+.modo-escuro {
+    --cor2: black;
+    --cor3: white;
+    --cor1: #850400;
+}
+
+
 body {
     font-family: "Poppins", Courier, monospace;
 }
@@ -10,10 +23,10 @@ body {
 }
 
 :root{
-    --cor1: #550300; 
+    --cor1: #850400; 
     --cor2: black;
     --cor3: white;
-    --cor4: #b90b04;
+    --cor4: #cd0700;
 }
 
 .container{
@@ -92,7 +105,9 @@ button:hover{
     transform: scale(1.1);
 }
 
-
+#sun{
+    width: 25px;
+}
 
 /* MAIN - STYLE */
 
