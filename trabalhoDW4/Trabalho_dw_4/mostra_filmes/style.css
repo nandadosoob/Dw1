@@ -50,7 +50,7 @@ nav #menu-mobile{
     width: 100%;
     height: calc(200vh - 100px);
     position: absolute;
-    transition: 0,5s;
+    transition: 0.5s;
     right: 100%;
     top: 100px; 
 
@@ -99,10 +99,6 @@ nav #cadastro,#inicio,#vizualizar{
     text-decoration:none;
     color: var(--cor2);
 
-}
-
-button:hover{
-    transform: scale(1.1);
 }
 
 #sun{
@@ -189,13 +185,3 @@ main {
         display: none;
     }
 }
-/* 
-@media screen and (max-width: 767px){
-    main .box1-desktop{
-        display: none;
-    }
-
-    main .box2-mobile{
-        display: flex;
-    }
-} */
